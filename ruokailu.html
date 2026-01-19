@@ -25,16 +25,16 @@
 </header>
 
 <nav class="main-nav">
-    <button class="nav-toggle" aria-label="Avaa valikko">
+    <button class="nav-toggle" aria-label="Avaa valikko" onclick="toggleMenu()">
         ☰
     </button>
-    <ul id="nav-menu">
-        <li><a href="index.html">Etusivu</a></li>
-        <li><a href="toiminta.html">Toiminta</a></li>
-        <li><a href="majoitus.html">Majoitus</a></li>
-        <li><a href="ruokailu.html" class="active">Ruokailu</a></li>
-        <li><a href="tilat.html">Tilat</a></li>
-        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+    <ul>
+        <li><a href="index.html" class="active" onclick="closeMenu()">Etusivu</a></li>
+        <li><a href="toiminta.html" onclick="closeMenu()">Toiminta</a></li>
+        <li><a href="majoitus.html" onclick="closeMenu()">Majoitus</a></li>
+        <li><a href="ruokailu.html" onclick="closeMenu()" class="active">Ruokailu</a></li>
+        <li><a href="tilat.html" onclick="closeMenu()">Tilat</a></li>
+        <li><a href="yhteystiedot.html" onclick="closeMenu()">Yhteystiedot</a></li>
     </ul>
 </nav>
 
@@ -63,6 +63,17 @@
 
 </div>
 
+<script>
+function toggleMenu() {
+    const ul = document.querySelector('.main-nav ul');
+    ul.classList.toggle('show');
+}
+
+function closeMenu() {
+    const ul = document.querySelector('.main-nav ul');
+    ul.classList.remove('show');
+}
+</script>
 
 </body>
 </html>

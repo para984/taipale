@@ -1,0 +1,246 @@
+:root {
+    --dark-blue: #0a2433;     /* syvä yötaivaan sininen */
+    --teal: #163e45;          /* järven ja metsän tumma petroli */
+    --teal-light: #1f555d;    /* navigaation hover / korostus */
+    --background: #102b34;    /* sivun taustaväri */
+    --content-bg: #e3ecec;    /* vaalea sisältöalue */
+    --accent: #ff9f43;        /* nuotion lämmin oranssi */
+    --white: #ffffff;
+    --footer: #163e45;          /* footer bg */
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* SIVUSTON KEHYS */
+.site-wrapper {
+    max-width: 820px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+
+body {
+    margin: 0;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: var(--dark-blue);
+    line-height: 1.6;
+    background-color: var(--background);
+}
+
+/* HEADER */
+.header {
+    position: relative;
+    height: 40vh;
+    min-height: 250px;
+    overflow: hidden;
+}
+.header img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.header-text {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    left: auto;
+    bottom: auto;
+    background: rgba(11, 44, 61, 0.7);
+    color: var(--white);
+    padding: 1rem 1.5rem;
+    border-radius: 0.5rem;
+}
+.header-text h1 {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+}
+
+
+
+
+/* NAVIGATION */
+.main-nav {
+    width: 80%;
+    background: linear-gradient(
+        to bottom,
+        #1b4a52,
+        #163e45
+    );
+    margin: 0 auto;
+    border-radius: 0 0 1.5rem 1.5rem;
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.25);
+}
+.main-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem;
+    margin: 0;
+    flex-wrap: wrap;
+}
+.main-nav a {
+    color: var(--white);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+}
+.main-nav a:hover,
+.main-nav a.active {
+    background-color: var(--accent);
+    border-radius: 1rem;
+    color: var(--dark-blue);
+}
+
+
+/* CONTENT */
+.content {
+    max-width: 1100px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    font-size: 14px;
+}
+section {
+    background-color: var(--content-bg);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+}
+h2 {
+    margin-block-start: 0.40em;
+    margin-block-end: 0.83em;
+    text-shadow: 1px 1px 6px #777777;
+}
+h3 {
+    margin-block-start: 0.40em;
+    margin-block-end: 0.40em;
+}
+summary {
+ cursor: pointer;
+ font-weight: bold;
+}
+.img-keskus {
+    float: right;
+    clip-path: circle(40%);
+    shape-outside: circle(45%);
+  }
+
+
+
+/* FOOTER */
+footer {
+    background-color: var(--footer);
+    color: var(--white);
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;   /* pienempi korkeus */
+    font-size: 0.85rem;     /* hieman pienempi teksti */
+    line-height: 1.0;
+}
+footer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+
+
+/* Form */
+form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: start;
+  flex-direction: column;
+}
+
+label {
+  width: 25%;
+  margin-bottom: 2px;
+}
+
+input[type=text], select {
+  width: 55%;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  padding: 8px;
+}
+
+input[type=checkbox], select {
+    margin-bottom: 10px;
+    margin-left: 5px;
+    padding: 10px;
+  }
+
+  input[type=date], select {
+    width: 110px;
+  }
+
+textarea {
+  width: 65%;
+  height: 150px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 10px;
+}
+
+input[type=submit] {
+  width: 50%;
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  justify-content: center;
+}
+
+
+/* HAMBURGER */
+.nav-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--white);
+    font-size: 1.8rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+/* MOBIILI */
+@media (max-width: 730px) {
+    .header {
+        height: 220px;
+    }
+    .header-text {
+        font-size: 0.9rem;
+    }
+    .nav-toggle {
+        display: block;
+    }
+    .main-nav ul {
+        flex-direction: column;
+        display: none;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .main-nav ul.show {
+        display: flex;
+    }
+    .main-nav li {
+        margin: 0.3rem 0;
+    }
+    .content {
+        padding: 0.5rem;
+    }
+    section {
+        padding: 1rem;
+    }
+}
+
+

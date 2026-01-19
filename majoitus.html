@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Pasi Rantanen">
+    <title>Taipaleen leirikeskus</title>
+    <link rel="stylesheet" href="styles2.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="site-wrapper">
+
+<header class="header">
+    <img src="tourist-tent-at-campsite.jpg" alt="Leirintäalue järven rannalla iltahämärässä">
+    <div class="header-text">
+        <h1>Taipaleen leirikeskus</h1>
+        <p>Pirkanmaan sydämessä luonnon rauhassa</p>
+    </div>
+</header>
+
+<nav class="main-nav">
+    <button class="nav-toggle" aria-label="Avaa valikko">
+        ☰
+    </button>
+    <ul id="nav-menu">
+        <li><a href="index.html">Etusivu</a></li>
+        <li><a href="toiminta.html">Toiminta</a></li>
+        <li><a href="majoitus.html" class="active">Majoitus</a></li>
+        <li><a href="ruokailu.html">Ruokailu</a></li>
+        <li><a href="tilat.html">Tilat</a></li>
+        <li><a href="yhteystiedot.html">Yhteystiedot</a></li>
+    </ul>
+</nav>
+
+<main class="content">
+    <section>
+        <h2>Majoitus</h2>
+<p>Meillä voit vuokrata mökin, teltan, asuntoauto- tai vaunupaikan tai huoneen päärakennukselta.</p>
+
+<h3>Mökit</h3>
+<p> Mökkejä on kahta kokoa. Pieniä neljän hengen mökkejä löytyy kuusi kappaletta. Niihin voi pedata myös yhden lisävuoteen sohvalle. Suurempia kahdeksan hengen mökkejä on kymmenen kappaletta.</p>
+Pienen mökin vuorokausihinta on 70 €. 
+    <details>
+      <summary>Vuokraa pieni mökki tästä</summary>
+      
+<form action="#">
+   <label for="fname">Etunimi:</label>
+   <input type="text" id="fname" name="fname" placeholder="Etunimi">
+
+   <label for="lname">Sukunimi:</label>
+   <input type="text" id="lname" name="lname" placeholder="Sukunimi">
+
+   <label for="country">Country:</label>
+   <select id="country" name="country">
+     <option value="australia">Australia</option>
+     <option value="canada">Canada</option>
+     <option value="usa">USA</option>
+    </select>
+    
+    <label for="message">Viesti:</label>
+    <textarea id="message" name="message" placeholder="Kirjoita viesti:"></textarea>
+
+    <input type="submit" value="Submit">
+ </form>
+</details>
+
+    <br>
+
+Ison mökin vuorokausihinta on 100 €.
+<details>
+      <summary>Vuokraa suuri mökki tästä</summary>
+      
+<form action="#">
+   <label for="fname">Etunimi:</label>
+   <input type="text" id="fname" name="fname" placeholder="Etunimi">
+   <label for="lname">Sukunimi:</label>
+   <input type="text" id="lname" name="lname" placeholder="Sukunimi">
+   
+   <p>
+       <input type="checkbox" id="vehicle1" name="vehicle1" value="Pieni">
+       <label for="vehicle1">Pieni mökki</label><br>
+       <input type="checkbox" id="vehicle2" name="vehicle2" value="Iso">
+       <label for="vehicle2">Iso mökki</label><br>
+       <input type="checkbox" id="vehicle3" name="vehicle3" value="Teltta">
+       <label for="vehicle3">Telttapaikka</label><br>
+       <input type="checkbox" id="vehicle3" name="vehicle3" value="Asuntoautopaikka">
+       <label for="vehicle3">Asuntoautopaikka</label><br>
+   </p>
+   
+   <label for="date">Varauspäivä:</label>
+   <input type="date" id="date" value="2026-01-16"><br>
+    
+    <label for="message">Message:</label>
+    <textarea id="message" name="message" placeholder="Kirjoita viesti:"></textarea>
+
+    <input type="submit" value="Submit">
+ </form>
+</details>  <br>
+
+<h3>Teltat</h3>
+<p>Meillä on oma telttailualue, jolta voi vuokrata telttamajoituksen nukkumisvarusteineen. Telttojen koot vaihtelevat kolmen hengen teltasta kuuden hengen telttaan. Yhden teltan vuorokausihinta on 5 € plus 10 € jokaiselta yöpyjältä. 
+Telttamajoitusta on tarjolla kesäkuun alusta syyskuun loppuun.</p>
+Varaa telttamajoitus tästä. (Avautuu lomake.)
+
+<h3>Asuntoautopaikat</h3>
+<p>Asuntoautoille- ja vaunuille on joukko omia paikkoja, joilla on jaettu huoltorakennus. Paikkoja löytyy kahdellekymmenelle kulkuneuvolle. Paikan vuorokausivuokra on 20 € läpi vuoden.</p>
+Varaa asuntoautopaikka tästä. (Avautuu lomake.)
+
+<h3>Hotellimajoitus</h3>
+<p>Päärakennuksessamme on hotellihuoneita 30 kappaletta. Näistä 20 on kahden hengen huoneita ja 10 neljän hengen huoneita. Jokaisessa huoneessa on oma kylpyhuone ja pieni keittiö. Huoneisiin on mahdollista levittää sohvasta yksi lisävuode. Aamiainen kuuluu huoneiden hintaan. Kahden hengen huoneen vuorokausihinta on 90 € ja neljän hengen huoneen vuorokausihinta on 130 €.
+</p>
+
+Varaa huone tästä. (Avautuu lomake.)
+    </section>
+</main>
+
+
+<footer>
+  <p>© 2026 Taipaleen leirikeskus | <a href="yhteystiedot.html">Yhteystiedot</a></p>
+</footer>
+
+</div>
+
+
+</body>
+</html>

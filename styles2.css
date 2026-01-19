@@ -85,7 +85,7 @@ body {
 .main-nav a {
     color: var(--white);
     text-decoration: none;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 1rem;
     font-weight: bold;
 }
 .main-nav a:hover,
@@ -125,6 +125,11 @@ summary {
     float: right;
     clip-path: circle(40%);
     shape-outside: circle(45%);
+  }
+.icons {
+    display: flex;
+    justify-content:space-evenly;
+    vertical-align: middle;
   }
 
 

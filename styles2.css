@@ -269,6 +269,11 @@ input[type=submit] {
         padding: 1rem;
         margin-block-start: 230px;
     }
+    article {
+    background-color: var(--content-bg);
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    }
 }
 
 
